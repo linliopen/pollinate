@@ -1,0 +1,12 @@
+---
+- hosts: "backend"
+  become: yes
+  vars:
+    java_packages:
+      - java-1.8.0-openjdk
+    docker_install_compose: true
+    docker_compose_version: "1.26.0"
+    docker_compose_path: /usr/local/bin/docker-compose
+  roles:
+    - ansible-role-java
+    - ansible-role-docker

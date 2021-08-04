@@ -1,0 +1,9 @@
+
+SET NAMES utf8mb4;
+DROP TABLE IF EXISTS `items`;
+CREATE TABLE `items` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `createtime` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
